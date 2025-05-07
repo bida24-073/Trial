@@ -1,208 +1,139 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>My First GitHub Page</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-
-font-family: Arial, sans-serif;
-
-color: #333;
-
-background-color: #f9f9f9;
-
-margin: 0;
-
-padding: 0;
-
-line-height: 1.6;
-
-}
-
-
-header {
-
-background-color: #4CAF50;
-
-color: white;
-
-padding: 20px;
-
-text-align: center;
-
-}
-
-
-header h1 {
-
-margin: 0;
-
-}
-
-
-nav a {
-
-color: white;
-
-text-decoration: none;
-
-margin: 0 10px;
-
-}
-
-
-nav a:hover {
-
-text-decoration: underline;
-
-}
-
-
-main {
-
-padding: 20px;
-
-max-width: 800px;
-
-margin: 0 auto;
-
-}
-
-
-main img {
-
-max-width: 100%;
-
-height: auto;
-
-display: block;
-
-margin: 20px 0;
-
-}
-
-
-footer {
-
-background-color: #333;
-
-color: white;
-
-text-align: center;
-
-padding: 10px;
-
-position: fixed;
-
-bottom: 0;
-
-width: 100%;
-
-}
-
-
-p {
-
-font-size: 1.1em;
-
-}
-
-
-a {
-
-color: #4CAF50;
-
-text-decoration: none;
-
-}
-
-
-a:hover {
-
-text-decoration: underline;
-
-}
-
-
-img {
-
-border: 5px solid #4CAF50;
-
-border-radius: 10px;
-
-}
-
-
-main a[href^="mailto:"] {
-
-color: #ff5722;
-
-font-weight: bold;
-
-}
-
-
-
-
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Auto Auctions | Luxury Vehicle Specialists</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS linking -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Apex Auto Auctions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inventory.html">Inventory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<header>
+    <main class="container my-5">
+        <!-- Hero Section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-4">
+                <h1>Luxury at Apex Auto Auction</h1>
+                <p class="lead">At Apex Auto Auctions, we take pride in offering the finest selection of luxury and performance vehicles.</p>
+                <a href="inventory.html" class="btn btn-primary">View Our Collection</a>
+            </div>
+            <div class="col-md-8">
+                <img src="images/Bugatti/B5.jpg" alt="Bugatti luxury car" class="img-fluid rounded shadow" style="height: 70vh; object-fit: cover;">
+            </div>
+        </div>
 
-<h1>Welcome to CarXperience</h1>
-  
-  <nav>
+        <!-- Featured Vehicles Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Featured Vehicles</h2>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/Ferrari/download (1).jpg" class="card-img-top" alt="Ferrari sports car" style="height: 50vh; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title">Ferrari F8 Tributo</h3>
+                        <p class="card-text">Experience the pinnacle of Italian engineering with this 2022 model featuring 710 horsepower.</p>
+                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/Bugatti/B5.jpg" class="card-img-top" alt="Bugatti luxury car" style="height: 50vh; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title">Bugatti Chiron</h3>
+                        <p class="card-text">The ultimate in automotive excellence with a top speed of 261 mph.</p>
+                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<a href="index.html">Home</a> |
+        <!-- About Section -->
+        <div class="row align-items-center bg-light p-4 rounded mb-5">
+            <div class="col-md-8">
+                <h2>Why Choose Apex Auto Auctions?</h2>
+                <p>With over 20 years in the luxury automotive industry, we provide:</p>
+                <ul>
+                    <li>Certified pre-owned vehicles with complete service history</li>
+                    <li>Transparent bidding process</li>
+                    <li>Worldwide shipping options</li>
+                    <li>Financing assistance</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming Auction</h5>
+                        <p class="card-text">Join us next Saturday for our exclusive luxury vehicle auction featuring rare collectibles and modern supercars.</p>
+                        <a href="#" class="btn btn-primary">Register to Bid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<a href="about.html">About</a> |
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Apex Auto Auctions</h5>
+                    <p>Your premier destination for luxury and performance vehicles.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="inventory.html" class="text-white">Inventory</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        123 Luxury Lane<br>
+                        Beverly Hills, CA 90210<br>
+                        (555) 123-4567
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Apex Auto Auctions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-<a href="contact.html">Contact</a>| 
-
-</nav>
-  
-
-</header>
-
-
-<main>
-
-<p>This is a simple webpage hosted on GitHub Pages.</p>
-  <p>Your go to destination for car reviews, expert tips, and all things automotive.Explore the world of cars with us and fuel your passion for the road</p>
-
-<p>Here's a picture of a car:</p>
-
-<img src="2021-Lamborghini-Aventador-exterior-B-1_o.jpg" height="250" width="300">
-
-<p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
-
-   <p>Range Rover Evoque-P759000</p>
-  <p>Toyota GR6-P245000</p>
-  <p>BMX X4 Coupe-P921000</p>
-  <p>Lamborghini Aventor-P2300000</p>
-  <p>Mercedes Benz EClass 2025-P1500000</p>
-
-</main>
-
-
-<footer>
-
-<p>&copy; 2025 Nitamo</p>
-
-</footer>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
