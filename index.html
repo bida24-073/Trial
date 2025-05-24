@@ -68,122 +68,80 @@
         </header>
 
 <main class="container my-5">
-
-    <div class="row align-items-center">
+    <!-- Hero Section (Top Banner) -->
+    <div class="row align-items-center mb-5">
         <div class="col-md-4">
             <h2>Luxury at Apex Auto Auction</h2>
-            <p>At Apex Auto Auctions, we take pride in selling the 
-                beauty and performance in luxury cars.</p>
+            <p>At Apex Auto Auctions, we take pride in selling the beauty and performance in luxury cars.</p>
         </div>
-        <iframe class="col-md-8">
-            <img src="images/Bugatti/B5.jpg" class="img-fluid rounded" style="height: 70vh;">
-        </iframe>
-
-    
+        <div class="col-md-8">
+            <img src="images/Bugatti/B5.jpg" class="img-fluid rounded" style="height: 400px; width: 100%; object-fit: cover;">
+        </div>
     </div>
 
-    <div class="row">
-    
-            <div class="col-md<-8">
-
-                <img src="images/Ferrari/home2.jpg" class="img-fluid rounded" style="height: 80vh;">
-
-                <div class="text-description">
-                    <h2>Ferrari Legacy</h2>     
-                    <p>Step into a world where precision engineering meets raw power.</p>
-                    <dl>
-                        <dt>Ferrari</dt>
-                        <dd>Iconic Italian design meets thrilling performance—Ferrari is pure driving passion.</dd>
-                    </dl>
-
-                    <a href="Ferrari.html">
-                        <button type="button" class="btn btn-primary btn-sm">View cars</button>
-                    </a>
-
+    <!-- Brand Showcase Grid (4 equal-sized cards) -->
+    <div class="row g-4"> <!-- 'g-4' adds spacing between cards -->
+        <!-- Ferrari -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100"> <!-- 'h-100' makes all cards same height -->
+                <img src="images/Ferrari/home2.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari Legacy</h5>
+                    <p class="card-text">Step into a world where precision engineering meets raw power.</p>
+                    <a href="Ferrari.html" class="btn btn-primary btn-sm">View Cars</a>
                 </div>
-
             </div>
+        </div>
 
-            <div class="col-md<-8">
-
-                <img src="images/Lamborghini/home1.jpg" class="img-fluid rounded" style="height: 80vh;">
-
-                <div class="text-description">
-                    <h2>Lamborghini Legacy</h2>
-                    <dl>
-                        <dt>Lamborghini</dt>
-                            <dd>An icon of speed and style, engineered to thrill and born to stand out.</dd>
-                    </dl>
-
-                    <a href="Lamborghini.html">
-                        <button type="button" class="btn btn-primary btn-sm">View cars</button>
-                    </a>
-                    
+        <!-- Lamborghini -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <img src="images/Lamborghini/home1.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini Legacy</h5>
+                    <p class="card-text">An icon of speed and style, engineered to thrill.</p>
+                    <a href="Lamborghini.html" class="btn btn-primary btn-sm">View Cars</a>
                 </div>
-        
-               
-        
             </div>
-            
-            <div class="col-md<-8">
+        </div>
 
-                <img src="images/McLaren/home5.jpg" class="img-fluid rounded" style="height: 80vh;">
-
-                <div class="text-description">
-                    <h2>McLaren Legacy</h2>     
-                    <p>Precision-built for adrenaline, McLaren fuses cutting-edge tech with track-born performance.</p>
-
-                    <a href="McLaren.html">
-                        <button type="button" class="btn btn-primary btn-sm">View cars</button>
-                    </a>
-
+        <!-- McLaren -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <img src="images/McLaren/home5.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">McLaren Legacy</h5>
+                    <p class="card-text">Precision-built for adrenaline and track-born performance.</p>
+                    <a href="McLaren.html" class="btn btn-primary btn-sm">View Cars</a>
                 </div>
-        
-               
-        
             </div>
-    
-            <div class="col-md<-8">
+        </div>
 
-                <img src="images/Porsche/home6.jpg" class="img-fluid rounded" style="height: 80vh;">
-
-                <div class="text-description">
-                    <h2>Porsche Legacy</h2>     
-                    <p>Timeless design meets relentlesss engineering-Porsche is where heritage powers innovation.</p>
-                    
-                    <a href="Porsche.html">
-                        <button type="button" class="btn btn-primary btn-sm">View cars</button>
-                    </a>
-
+        <!-- Porsche -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <img src="images/Porsche/home6.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Porsche Legacy</h5>
+                    <p class="card-text">Timeless design meets relentless engineering.</p>
+                    <a href="Porsche.html" class="btn btn-primary btn-sm">View Cars</a>
                 </div>
-        
-               
-        
             </div>
-    
+        </div>
+    </div>
 
-    
-    <div class="col-md-4">
-    
-    <div class="card">
-    
-    <div class="card-body">
-    
-    <h5 class="card-title">Did You Know?</h5>
-    
-    <p class="card-text">GitHub Pages is a free service to host static websites directly from your GitHub repository.</p>
-    
+    <!-- "Did You Know?" Card (Centered) -->
+    <div class="row mt-5">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Did You Know?</h5>
+                    <p class="card-text">GitHub Pages is a free service to host static websites directly from your GitHub repository.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </main>
-
-
+</main>
 <footer>
 
 <p>&copy; 2025 Apex Auto Auctions</p>
